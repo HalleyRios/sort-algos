@@ -4,7 +4,7 @@
   "description": "A collection of sorting algorithms an it's related tests.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/HalleyRios/sort-algos/issues"
   },
-  "homepage": "https://github.com/HalleyRios/sort-algos#readme"
+  "homepage": "https://github.com/HalleyRios/sort-algos#readme",
+  "devDependencies": {
+    "jest": "^27.5.1",
+    "ts-node": "^10.5.0"
+  }
 }
