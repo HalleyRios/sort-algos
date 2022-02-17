@@ -27,7 +27,7 @@ class Queue {
         return this.size === 0;
     }
 
-    get values(): Array<any> {
+    values(): Array<any> {
         return this.collection;
     }
 }
