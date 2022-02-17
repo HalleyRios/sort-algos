@@ -4,7 +4,8 @@
   "description": "A collection of sorting algorithms an it's related tests.",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "repository": {
     "type": "git",
