@@ -23,10 +23,6 @@ class PriorityQueue extends Queue {
             }
         }
     }
-
-    values(): Array<any> {
-        return super.values();
-    }
 }
 
 export default PriorityQueue;
