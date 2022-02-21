@@ -106,8 +106,41 @@ describe('BinarySearchTree', () => {
         expect(bst.inOrder()).toBeNull();
 
         items.map(item => bst.add(item));
-        items.sort((a, b) => a - b);
+        const orderedItems = [...items].sort((a, b) => a - b);
 
-        expect(bst.inOrder()).toEqual(items);
+        expect(bst.inOrder()).toEqual(orderedItems);
+    });
+
+    it('should return the tree in pre order (root nodes before leafs), null if empty', () => {
+        const bst: BinarySearchTree = new BinarySearchTree();
+
+        expect(bst.inPreOrder()).toBeNull();
+
+        items.map(item => bst.add(item));
+
+        const preOrderedItems: number[] = [3, 2, 1, 5, 4, 7, 6, 8];
+        expect(bst.inPreOrder()).toEqual(preOrderedItems);
+    });
+
+    it('should return the tree in post order (leafs before root nodes), null if empty', () => {
+        const bst: BinarySearchTree = new BinarySearchTree();
+
+        expect(bst.inPostOrder()).toBeNull();
+
+        items.map(item => bst.add(item));
+
+        const postOrderedItems: number[] = [1, 2, 4, 6, 8, 7, 5, 3];
+        expect(bst.inPostOrder()).toEqual(postOrderedItems);
+    });
+
+    it('should return the tree in level order (BST), null if empty', () => {
+        const bst: BinarySearchTree = new BinarySearchTree();
+
+        expect(bst.inLevelOrder()).toBeNull();
+
+        items.map(item => bst.add(item));
+
+        const levelOrderedItems: number[] = [3, 2, 5, 1, 4, 7, 6, 8];
+        expect(bst.inLevelOrder()).toEqual(levelOrderedItems);
     });
 });

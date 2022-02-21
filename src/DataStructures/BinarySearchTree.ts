@@ -224,15 +224,16 @@ class BinarySearchTree {
     }
 
     /* Breadth First Search - BFS */
-    levelOrder(): number[] {
+    inLevelOrder(): number[] {
         const result: number[] = [];
         const queue: Queue = new Queue();
+
         if (this.root !== null) {
             queue.enqueue(this.root);
 
             while (!queue.isEmpty) {
                 let node = queue.dequeue();
-
+                result.push(node.data);
                 if (node.left !== null) {
                     queue.enqueue(node.left);
                 }
