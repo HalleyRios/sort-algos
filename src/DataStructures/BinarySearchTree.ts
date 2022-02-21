@@ -1,4 +1,4 @@
-import Queue from "./Queue";
+import Queue from './Queue';
 
 class Node {
     data: number;
@@ -147,8 +147,8 @@ class BinarySearchTree {
             return -1;
         }
 
-        let left = this.findMinHeight(node.left);
-        let right = this.findMinHeight(node.right);
+        const left = this.findMinHeight(node.left);
+        const right = this.findMinHeight(node.right);
 
         if (left < right) {
             return left + 1;
@@ -162,8 +162,8 @@ class BinarySearchTree {
             return -1;
         }
 
-        let left = this.findMaxHeight(node.left);
-        let right = this.findMaxHeight(node.right);
+        const left = this.findMaxHeight(node.left);
+        const right = this.findMaxHeight(node.right);
 
         if (left > right) {
             return left + 1;
@@ -232,7 +232,7 @@ class BinarySearchTree {
             queue.enqueue(this.root);
 
             while (!queue.isEmpty) {
-                let node = queue.dequeue();
+                const node = queue.dequeue();
                 result.push(node.data);
                 if (node.left !== null) {
                     queue.enqueue(node.left);

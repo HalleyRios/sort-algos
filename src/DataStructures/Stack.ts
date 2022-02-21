@@ -22,7 +22,7 @@ class Stack {
 
     pop(): any {
         if (this.isEmpty()) return undefined;
-        let poppedItem = this.store[this.count - 1];
+        const poppedItem = this.store[this.count - 1];
         delete this.store[this.count - 1];
         this.count--;
         return poppedItem;

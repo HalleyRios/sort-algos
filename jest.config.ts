@@ -4,10 +4,10 @@
  */
 
 export default {
-  clearMocks: true,
-  collectCoverage: false,
-  coverageDirectory: "coverage",
-  coverageProvider: "v8",
-  preset: 'ts-jest',
-  testEnvironment: 'node',
+    clearMocks: true,
+    collectCoverage: false,
+    coverageDirectory: 'coverage',
+    coverageProvider: 'v8',
+    preset: 'ts-jest',
+    testEnvironment: 'node',
 };

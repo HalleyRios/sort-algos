@@ -1,4 +1,4 @@
-import Queue from "./Queue";
+import Queue from './Queue';
 
 class PriorityQueue extends Queue {
     static PRIORITY_INDEX = 1;

@@ -1,4 +1,4 @@
-import Stack from "./Stack";
+import Stack from './Stack';
 
 describe('Stack', ()=> {
     const items = ['First Added Item', 'Last Added Item'];
@@ -33,5 +33,5 @@ describe('Stack', ()=> {
         expect(poppedItem).toEqual(items[items.length - 1]);
         expect(testStack.size).toEqual(originalSize - 1);
         expect(testStack.peek()).toEqual(secondLastItem);
-    })
+    });
 });

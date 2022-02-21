@@ -1,18 +1,18 @@
-import Set from "./Set";
+import Set from './Set';
 
 describe('Set', () => {
     const items: Array<string> = [
-        "First Element",
-        "Second Element",
-        "Third Element"
+        'First Element',
+        'Second Element',
+        'Third Element'
     ];
 
     const itemsClone: Array<any> = [...items];
 
     const otherItems: Array<string> = [
-        "Fourth Element",
-        "Another Element",
-        "Third Element"
+        'Fourth Element',
+        'Another Element',
+        'Third Element'
     ];
 
     it('should have a typeof Set', () => {
@@ -30,11 +30,11 @@ describe('Set', () => {
     });
 
     it('should add a particular element only if it\'s not already there', () => {
-       const testSet = new Set();
-       const element = items[0];
-       expect(testSet.add(element)).toBeTruthy();
-       expect(testSet.has(element)).toBeTruthy();
-       expect(testSet.add(element)).toBeFalsy();
+        const testSet = new Set();
+        const element = items[0];
+        expect(testSet.add(element)).toBeTruthy();
+        expect(testSet.has(element)).toBeTruthy();
+        expect(testSet.add(element)).toBeFalsy();
     });
 
     it('should remove a particular element if exists in a set', () => {

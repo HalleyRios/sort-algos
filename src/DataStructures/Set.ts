@@ -66,9 +66,9 @@ class Set {
     }
 
     isSubset(otherSet: Set): boolean {
-       return this.values.every(element => {
-           return otherSet.has(element);
-       });
+        return this.values.every(element => {
+            return otherSet.has(element);
+        });
     }
 
     get isEmpty(): boolean {
