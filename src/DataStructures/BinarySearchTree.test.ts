@@ -1,4 +1,4 @@
-import BinarySearchTree from "./BinarySearchTree";
+import BinarySearchTree from './BinarySearchTree';
 
 describe('BinarySearchTree', () => {
     const items: number[] = [3, 5, 7, 2, 4, 6, 8, 1];
@@ -18,14 +18,14 @@ describe('BinarySearchTree', () => {
     });
 
     it('should return the smaller value on a tree', () => {
-        const bst: BinarySearchTree = new BinarySearchTree()
+        const bst: BinarySearchTree = new BinarySearchTree();
         items.map(item => bst.add(item));
 
         expect(bst.findMin()).toEqual(1);
     });
 
     it('should return the bigger value on a tree', () => {
-        const bst: BinarySearchTree = new BinarySearchTree()
+        const bst: BinarySearchTree = new BinarySearchTree();
         items.map(item => bst.add(item));
 
         expect(bst.findMax()).toEqual(8);
